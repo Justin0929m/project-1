@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.grid__padding{
+    padding: 20px;
+}
+
+.site__padding{
+    padding: 5%;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+}
+
+#nav__link{
+    display: flex;
+    list-style: none;
+}
+
+.nav__links > a{
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+header > img{
+    width: 99.1vw;
+}
+
+.grid__section{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    height: 150vh;
+    gap: 10px;
+    margin: 20px;
+}
+
+.section__flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section__1{
+    grid-column: 1 / 8;
+    grid-row: 1 / 6;
+    background-color: orangered;
+    color: #fff;
+    background: url(https://i.postimg.cc/W4P8yvF7/pexels-kai-pilger-996329.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.section__2{
+    grid-column: 1 / 4;
+    grid-row: 6 / 12;
+    background-color: blue;
+    color: #fff;
+    background-image: url(https://images.pexels.com/photos/4087394/pexels-photo-4087394.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+}
+
+.section__3{
+    grid-column: 4 / 8;
+    grid-row: 6 / 9;
+    background-color: black;
+    color: #fff;
+    background: url(https://images.pexels.com/photos/1087727/pexels-photo-1087727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+}
+
+.section__4{
+    /* display: none; */
+    grid-column: 4 / 6;
+    grid-row: 9 / 12;
+    background-color: crimson;
+    color: #fff;
+    background: url(https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+}
+
+.section__5{
+    grid-column: 6 / 8;
+    grid-row: 9 / 12;
+    background-color: tomato;
+    color: #fff;
+    background: url(https://images.pexels.com/photos/2129970/pexels-photo-2129970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+}
+
+/* Category Styling Start */
+
+#categories{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-left: 5%;
+    height: 30vh;
+}
+
+svg{
+    width: 40%;
+}
+/* Category Styling End */
+
+/* Product Styling Start */
+
+.box__title{
+    margin: 2%;
+}
+
+#grid__products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+}
+
+.box{
+    flex-basis: 20%;
+    margin: 10px;
+}
+
+.box__links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin: 5%;
+}
+
+.list{
+    outline: 1px solid #000;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: ease-in-out 0.4s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.list:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.box__img{
+    width: 100%;
+}
+
+.box__1{
+   width: 10%;
+   height: 10%;
+}
+
+.box__2{
+    width: 10%;
+    height: 10%;
+ }
+
+ .box__3{
+    width: 10%;
+    height: 10%;
+ }
+
+ .box__4{
+    width: 10%;
+    height: 10%;
+ }
+
+ .box__5{
+    width: 10%;
+    height: 10%;
+ }
+
+ .box__6{
+    width: 10%;
+    height: 10%;
+ }
+
+ .box__7{
+    width: 10%;
+    height: 10%;
+ }
+
+ .box__8{
+    width: 10%;
+    height: 10%;
+ }
+
+ /* Footer Styling End */
+ footer{
+     height: 40vh;
+     background-color: #E9E9E9;
+ }
+
+ /* Footer Styling End */
+ 
+
+/* About Page Styling Start */
+
+
+
+/* About Page Styling End */
+
+/* Mobile Styling Start */
+
+@media (max-width: 430px) {
+
+    header{
+        height: 110vh;
+    }
+
+    #navbar > h1{
+        font-size: 1rem;
+    }
+
+    #navbar__title{
+        padding-left: 3%;
+    }
+
+    .section__div__mobile{
+        height: 10%;
+    }
+
+    .mobile__hide{
+        display: none;
+    }
+
+    .grid__section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #categories{
+        display: none;
+    }
+
+    #grid__products{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box{
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .box__links{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px 0;
+    }
+
+    .box__title{
+        text-align: center;
+    }
+
+    .list{
+        margin: 5px;
+    }
+
+}
+
+/* Mobile Styling End */
+
+.hide{
+    display: none;
+}
